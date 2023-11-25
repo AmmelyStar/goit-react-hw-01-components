@@ -16,7 +16,7 @@
   margin-bottom: 20px;
 }
 
-.statlist {
+.statList {
   list-style: none;
   padding: 0;
   background-color: getRandomColor();
