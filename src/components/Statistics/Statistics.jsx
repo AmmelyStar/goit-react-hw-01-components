@@ -3,9 +3,10 @@ import css from './Statistics.module.css';
 import { getRandomColor } from './randomColor';
 
 
-export const Statistics = ({ stats }) => {
+export const Statistics = ({ stats, title }) => {
   return (
     <section className={css.statistics}>
+        {title && <h2 className={css.title}>{title}</h2>}
       <ul className={css.statList}>
         {stats.map(e => (
           <li className={css.item} key={e.id} style={{backgroundColor: getRandomColor() }}>
@@ -19,6 +20,7 @@ export const Statistics = ({ stats }) => {
 };
 
 Statistics.propTypes = {
+  title: PropTypes.string,
   stats: PropTypes.arrayOf(
     PropTypes.exact({
       id: PropTypes.string.isRequired,
