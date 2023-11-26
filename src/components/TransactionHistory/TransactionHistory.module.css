@@ -1,0 +1,33 @@
+.tableWrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center; 
+
+  }
+
+.transactionHistory {
+  max-width: 500px;
+  border-collapse: collapse;
+  margin: 25px 0;
+
+}
+
+.thead th {
+  background-color: #f2f2f2;
+  padding: 12px 15px;
+  text-align: left;
+}
+
+.list {
+  background-color: #f9f9f9;
+}
+
+.td {
+  padding: 12px 15px;
+  border-bottom: 1px solid #ddd;
+}
+
+/* Hover effect on rows */
+.list:hover {
+  background-color: #e0e0e0;
+}
